@@ -88,9 +88,17 @@ DATABASES = {
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
+<<<<<<< HEAD
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
+=======
+
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
 ]
 
 

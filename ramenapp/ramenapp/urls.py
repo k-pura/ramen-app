@@ -21,5 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # In this case '' represents the root route
     path('', include('main_app.urls')),
+<<<<<<< HEAD
     path('accounts/', include('django.contrib.auth.urls')),
 ]
+=======
+    path('accounts/', include('django.contrib.auth.urls')),    
+]
+
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a

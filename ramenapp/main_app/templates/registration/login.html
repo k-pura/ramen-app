@@ -5,6 +5,7 @@
 
 <!-- Add the login form -->
 <form method="post" action="{% url 'login' %}">
+<<<<<<< HEAD
   {% csrf_token %}
   {{ form.as_p }}
   <input type="submit" class="btn" value="login">
@@ -13,5 +14,12 @@
 
 
 
+=======
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn" value="login">
+    <input type="hidden" name="next" value="{{ next }}">
+  </form>
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
 
 {% endblock %}

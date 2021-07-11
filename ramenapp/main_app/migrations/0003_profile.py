@@ -9,7 +9,11 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+<<<<<<< HEAD
         ('main_app', '0002_auto_20210711_1853'),
+=======
+        ('main_app', '0002_auto_20210711_2253'),
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
     ]
 
     operations = [

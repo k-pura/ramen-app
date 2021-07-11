@@ -8,11 +8,16 @@
   <title>Send Noods</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+=======
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">  
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
 </head>
 <body>
   <header class="navbar-fixed">
     <nav>
+<<<<<<< HEAD
       <div class="nav-wrapper teal lighten-2">
         <ul>
           <li><a href="/" class="left teal lighten-2 brand-logo hoverable">&nbsp;&nbsp;Send Noods</a></li>
@@ -26,6 +31,21 @@
           <li><a href="{% url 'signup' %}">Sign Up</a></li>
           <li><a href="{% url 'login' %}">Log In</a></li>
           {% endif %}
+=======
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="/" class="left brand-logo">&nbsp;&nbsp;Send Noods</a></li>
+        </ul>
+        <ul class="right">
+            {% if user.is_authenticated %}
+            <li><a href="/userprofile.html">My Ramen</a></li>
+            <li><a href="/buildramen">Build A Ramen</a></li>
+            <li><a href="{% url 'logout' %}">Log Out</a></li>
+            {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+            {% endif %}
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
         </ul>
       </div>
     </nav>
@@ -34,8 +54,13 @@
     {% block content %}
     {% endblock %}
   </main>
+<<<<<<< HEAD
   <footer class="page-footer teal lighten-2">
     <div class="right teal lighten-2">All Rights Reserved, &copy; 2021 Send Noods &nbsp;</div>
+=======
+  <footer class="page-footer">
+    <div class="right">All Rights Reserved, &copy; 2021 Send Noods &nbsp;</div>
+>>>>>>> bb530e78dc8c5916f244b192e72ae2aab440a23a
   </footer>
 </body>
 </html>
